@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'HospListBuilder.dart';
 import 'med_dbhelper.dart';
@@ -81,6 +82,11 @@ class Serv2Hosp extends StatelessWidget {
           ListTile(
               title: Text(_serv[index].toString()),
               leading: Icon(Icons.subdirectory_arrow_right),
+              onLongPress: () async {
+                String glink =
+                    "https://www.google.co.in/search?&q=${_serv[index].toString()}";
+                if (await canLaunch(glink)) launch(glink);
+              },
               onTap: () {
                 List<MedData> _ = listHosp(_serv[index].toString());
                 print(_);

@@ -41,7 +41,7 @@ class DatabaseHelper {
   Future<List<MedData>> getdata([String query=""]) async {
     await Future.delayed(const Duration(seconds: 2));
     var dbClient = await db;
-    List<Map> list = await dbClient.rawQuery("SELECT * FROM bvk where services like '%$query%' limit 20");
+    List<Map> list = await dbClient.rawQuery("SELECT * FROM bvk order by name asc");
     List<MedData> md = new List();
     list.forEach((item) {
       md.add(MedData(
