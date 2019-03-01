@@ -28,7 +28,7 @@ class HospPage extends StatelessWidget {
 
   List<Widget> getPhone() {
     List<Widget> _ = [];
-    op.phone.substring(6).split('/').forEach((no) {
+    op.phone.split('/').forEach((no) {
       _.add(ListTile(
         leading: Icon(Icons.dialpad, color: Colors.red),
         title: Text(no),
