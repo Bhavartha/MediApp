@@ -18,8 +18,7 @@ class SideDrawer extends StatelessWidget {
           child: Text(''),
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/logo.png'),
-              fit: BoxFit.fill,
+              image: AssetImage('assets/logo.png')
             ),
           ),
         ),
