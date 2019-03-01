@@ -18,7 +18,7 @@ class MedData {
     _consultants.split('%%').forEach((c){
      try{
       _temp.add(c.split('#'));}
-    catch(e){_temp.add(['na']);}  
+    catch(e){_temp.add(['na','na']);}  
       });
     return _temp;
   }
