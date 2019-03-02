@@ -13,7 +13,6 @@ class SideDrawer extends StatelessWidget {
         child: ListView(
       padding: EdgeInsets.zero,
       children: <Widget>[
-        SizedBox(height: 35),
         DrawerHeader(
           child: Text(''),
           decoration: BoxDecoration(
