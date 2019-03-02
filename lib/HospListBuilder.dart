@@ -24,8 +24,7 @@ class HospListBuilder extends StatelessWidget {
             title: Text(medsnap[index].name),
             subtitle: Text(medsnap[index].phone.split('/')[0]),
             leading: ClipOval(
-                child: Hero(
-              tag: medsnap[index].name,
+                child: Container(
               child: CachedNetworkImage(
                 width: 45,
                 height: 45,
