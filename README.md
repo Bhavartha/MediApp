@@ -1,16 +1,14 @@
-# mediapp
+# MediApp
 
-A new Flutter project.
+One app to get infomation about multiple hospitals in Mumbai.
+Easily get info about hospitals like address, phone number, available services, location on map, doctors, etc
 
-## Getting Started
+[Visit Website](https://mediapp.netlify.app) 
 
-This project is a starting point for a Flutter application.
+[Download Apk](https://mediapp.netlify.app/assets/MediApp.apk)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Features
+* Get info about Hospitals -> Get info like address, contact info, location on map, services,consultants,etc
+* Search Nearby Hospitals -> Search Neaby Hospitals in just one click. Uses Google Maps to show the hospitals
+* Search By Services -> Search Hospitals in Mumbai that have a particular service/facility easily
